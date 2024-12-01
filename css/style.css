@@ -8,74 +8,79 @@ header {
   padding-bottom: 24px;
   background: #181818;
 }
-header .container {
-  max-width: 1200px;
-  background: #181818;
-  margin: auto;
-  display: flex;
+header .bg-body-tertiary {
+  background-color: #181818 !important;
 }
-header .container .logo-img {
-  transition: 0.5s;
+header .navbar-brand img {
+  transition: 0.2s;
 }
-header .container .logo-img:hover {
+header .navbar-brand img:hover {
   transform: scale(1.3);
 }
-header .container nav {
-  display: flex;
-  justify-content: space-between;
-}
-header .container nav .navigation {
-  margin-left: 340px;
-  list-style-type: none;
-  display: flex;
-  gap: 32px;
-}
-header .container nav .navigation li a {
+header .nav-link {
+  display: inline;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 133%;
   color: #fff;
-  text-decoration: none;
-  transition: 0.5s;
+  margin-right: 51px;
 }
-header .container nav .navigation li a:hover {
-  color: gray;
+header .nav-link:hover {
+  color: gray !important;
 }
-header .container nav .navigation .nav-lower-text {
-  margin-right: 56px;
+header nav ul {
+  gap: 32px;
+}
+header nav ul .business-text {
+  margin-right: 52px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 154%;
   color: #fff;
   text-decoration: none;
-  transition: 0.5s;
 }
-header .container nav .navigation .border-nav {
+header nav ul .business-text:hover {
+  color: gray;
+}
+header nav ul .link-button-nav {
   padding: 11px 20px 11px 20px;
-  border: solid 1px #fff;
-  border-radius: 14px;
   background-color: #fff;
   color: #000;
+  text-decoration: none;
+  border-radius: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  transition: 0.2s;
+}
+header nav ul .link-button-nav:hover {
+  color: gray;
 }
 
 main {
   margin: 0;
   padding: 0;
+  background-color: #000;
 }
-main section {
+main .background-black {
+  background-color: #000;
+}
+main .background {
   z-index: 1;
-  background-image: url(../images/background-image.png);
+  background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0) 100%), url("../images/background-image.png");
   background-size: cover;
 }
-main section .container {
+main .background .container {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  padding-top: 500px;
+  padding-top: 600px;
 }
-main section .container .before-main {
+main .background .container .before-main {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -83,16 +88,18 @@ main section .container .before-main {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #c0c0c0;
+  margin-bottom: 40px;
 }
-main section .container h2 {
+main .background .container h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 54px;
   line-height: 0;
   text-align: center;
   color: #fff;
+  margin-bottom: 40px;
 }
-main section .container .section-large-text {
+main .background .container .section-large-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -100,15 +107,923 @@ main section .container .section-large-text {
   text-align: center;
   color: #c0c0c0;
 }
-main section .container .main-items {
+main .background .container .main-items {
   text-align: center;
   max-width: 580px;
   justify-content: center;
   margin: auto;
   z-index: 2;
 }
-main section .container .geo-in-end {
+main .background .container .geo-in-end {
   display: flex;
   list-style-type: none;
   gap: 31px;
+  justify-content: right;
+  width: 100%;
+  margin-bottom: 158px;
+}
+main .background .container .geo-in-end li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #fff;
+}
+main .background .container .geo-in-end li p {
+  display: flex;
+  text-align: center;
+}
+main .background .container .geo-in-end .compas:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/compas-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+main .background .container .geo-in-end .small-logo:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/Aperture-Icon-Light.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+main .background .container .geo-in-end .ISO:before {
+  content: "";
+  width: 32px;
+  height: 16px;
+  background-image: url(../images/ISO-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+main .background .container .geo-in-end .geo-point:before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/geo-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+main section {
+  text-align: center;
+}
+main section .text-center {
+  padding-left: 86px;
+  padding-bottom: 100px;
+}
+main section .big-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 105%;
+  text-align: center;
+  color: #fff;
+}
+main section h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 130%;
+  text-align: center;
+  color: #c0c0c0;
+  margin-bottom: 42px;
+}
+main section .read-more-link {
+  transition: 0.2s;
+}
+main section .read-more-link:hover {
+  transform: scale(1.1);
+}
+main section .background-1 {
+  background-image: url(../images/background-block-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 576px;
+  padding-top: 440px;
+  text-align: left;
+  margin-right: 8px;
+  padding-left: 30px;
+}
+main section .background-1 h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+main section .background-1 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+}
+main section .background-1 a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+  margin-left: 6px;
+}
+main section .background-1 .read-more-link {
+  padding: 11px 10px 11px 4px;
+  background-color: #fff;
+  border-radius: 14px;
+  width: 143px;
+  display: flex;
+  align-items: center;
+}
+main section .background-1 .black-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 14px;
+  background-color: #000;
+}
+main section .background-2 {
+  background-image: url(../images/background-block-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 576px;
+  padding-top: 440px;
+  text-align: left;
+  margin-left: 8px;
+  padding-left: 30px;
+}
+main section .background-2 h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+main section .background-2 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+}
+main section .background-2 a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+}
+main section .background-2 a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+  margin-left: 6px;
+}
+main section .background-2 .read-more-link {
+  padding: 11px 10px 11px 4px;
+  background-color: #fff;
+  border-radius: 14px;
+  width: 143px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main section .background-2 .black-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 14px;
+  background-color: #000;
+}
+main section .background-3 {
+  background-image: url(../images/background-block-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 576px;
+  padding-top: 440px;
+  text-align: left;
+  margin-right: 8px;
+  padding-left: 30px;
+}
+main section .background-3 h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+main section .background-3 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+}
+main section .background-3 a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+}
+main section .background-3 a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+  margin-left: 6px;
+}
+main section .background-3 .read-more-link {
+  padding: 11px 10px 11px 4px;
+  background-color: #fff;
+  border-radius: 14px;
+  width: 143px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main section .background-3 .black-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 14px;
+  background-color: #000;
+}
+main section .background-4 {
+  background-image: url(../images/background-block-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 576px;
+  padding-top: 440px;
+  text-align: left;
+  margin-left: 8px;
+  padding-left: 30px;
+}
+main section .background-4 h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+main section .background-4 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+}
+main section .background-4 a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+  margin-left: 6px;
+}
+main section .background-4 .read-more-link {
+  padding: 11px 10px 11px 4px;
+  background-color: #fff;
+  border-radius: 14px;
+  width: 143px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main section .background-4 .black-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 14px;
+  background-color: #000;
+}
+
+.owl-carousel .content-block-1 {
+  background-image: url(../images/background-content-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.owl-carousel .content-block-1 .pam-class {
+  text-align: left;
+  padding-top: 260px;
+  width: 300px;
+  margin-right: 62px;
+}
+.owl-carousel .content-block-1 .pam-class h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.owl-carousel .content-block-1 .pam-class .text-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+  margin-bottom: 204px;
+}
+.owl-carousel .content-block-1 .geo-in-end {
+  display: flex;
+  list-style-type: none;
+  gap: 31px;
+  justify-content: right;
+}
+.owl-carousel .content-block-1 .geo-in-end li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #fff;
+}
+.owl-carousel .content-block-1 .geo-in-end li p {
+  display: flex;
+  text-align: center;
+}
+.owl-carousel .content-block-1 .geo-in-end .compas:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/compas-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-1 .geo-in-end .small-logo:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/Aperture-Icon-Light.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-1 .geo-in-end .ISO:before {
+  content: "";
+  width: 32px;
+  height: 16px;
+  background-image: url(../images/ISO-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-1 .geo-in-end .geo-point:before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/geo-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-2 {
+  display: flex;
+}
+.owl-carousel .content-block-2 .pam-class {
+  max-width: 50%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  padding-top: 173px;
+  height: 100%;
+}
+.owl-carousel .content-block-2 .pam-class a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+  margin-left: 6px;
+}
+.owl-carousel .content-block-2 .pam-class .read-more-link {
+  padding: 11px 10px 11px 4px;
+  background-color: #fff;
+  border-radius: 14px;
+  width: 143px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 175px;
+}
+.owl-carousel .content-block-2 .pam-class .black-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 14px;
+  background-color: #000;
+}
+.owl-carousel .content-block-2 .pam-class .text-block-2 {
+  max-width: 514px;
+  margin: 0 100px;
+}
+.owl-carousel .content-block-2 .pam-class .text-title {
+  text-align: left;
+}
+.owl-carousel .content-block-2 .pam-class h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.owl-carousel .content-block-2 .pam-class .text-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+}
+.owl-carousel .content-block-2 .back-img-class {
+  background-image: url(../images/background-content-2.png);
+  width: 50%;
+  background-size: cover;
+}
+.owl-carousel .content-block-2 .geo-in-end {
+  display: flex;
+  list-style-type: none;
+  gap: 31px;
+  justify-content: right;
+}
+.owl-carousel .content-block-2 .geo-in-end li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #fff;
+}
+.owl-carousel .content-block-2 .geo-in-end li p {
+  display: flex;
+  text-align: center;
+}
+.owl-carousel .content-block-2 .geo-in-end .compas:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/compas-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-2 .geo-in-end .small-logo:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/Aperture-Icon-Light.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-2 .geo-in-end .ISO:before {
+  content: "";
+  width: 32px;
+  height: 16px;
+  background-image: url(../images/ISO-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-2 .geo-in-end .geo-point:before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/geo-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-3 {
+  background-image: url(../images/background-content-3.png);
+  background-size: 100% 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.owl-carousel .content-block-3 .pam-class {
+  text-align: left;
+  padding-top: 260px;
+  width: 300px;
+  margin-right: 62px;
+}
+.owl-carousel .content-block-3 .pam-class h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.owl-carousel .content-block-3 .pam-class .text-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+  margin-bottom: 204px;
+}
+.owl-carousel .content-block-3 .geo-in-end {
+  display: flex;
+  list-style-type: none;
+  gap: 31px;
+  justify-content: right;
+}
+.owl-carousel .content-block-3 .geo-in-end li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #fff;
+}
+.owl-carousel .content-block-3 .geo-in-end li p {
+  display: flex;
+  text-align: center;
+}
+.owl-carousel .content-block-3 .geo-in-end .compas:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/compas-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-3 .geo-in-end .small-logo:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/Aperture-Icon-Light.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-3 .geo-in-end .ISO:before {
+  content: "";
+  width: 32px;
+  height: 16px;
+  background-image: url(../images/ISO-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-3 .geo-in-end .geo-point:before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/geo-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-4 {
+  background-image: url(../images/background-content-4.png);
+  background-size: 100% 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.owl-carousel .content-block-4 .pam-class {
+  text-align: left;
+  padding-top: 260px;
+  width: 300px;
+  margin-right: 62px;
+}
+.owl-carousel .content-block-4 .pam-class h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.owl-carousel .content-block-4 .pam-class .text-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+  margin-bottom: 204px;
+}
+.owl-carousel .content-block-4 .geo-in-end {
+  display: flex;
+  list-style-type: none;
+  gap: 31px;
+  justify-content: right;
+}
+.owl-carousel .content-block-4 .geo-in-end li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #fff;
+}
+.owl-carousel .content-block-4 .geo-in-end li p {
+  display: flex;
+  text-align: center;
+}
+.owl-carousel .content-block-4 .geo-in-end .compas:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/compas-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-4 .geo-in-end .small-logo:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/Aperture-Icon-Light.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-4 .geo-in-end .ISO:before {
+  content: "";
+  width: 32px;
+  height: 16px;
+  background-image: url(../images/ISO-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-4 .geo-in-end .geo-point:before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/geo-img.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+.owl-carousel .content-block-5 {
+  width: 100%;
+  text-align: center;
+  padding-top: 113px;
+}
+.owl-carousel .content-block-5 h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 105%;
+  text-align: center;
+  color: #fff;
+}
+.owl-carousel .content-block-5 p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: center;
+  color: #c0c0c0;
+  margin-bottom: 82px;
+}
+.owl-carousel .content-block-5 .sponsors-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 182px;
+  align-items: center;
+}
+.owl-carousel .content-block-5 .sponsors-list li {
+  transition: 0.3s;
+}
+.owl-carousel .content-block-5 .sponsors-list li:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  padding-bottom: 100px;
+  background-color: #000;
+}
+footer .start-of-footer {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 108px;
+}
+footer .start-of-footer .read-more-link {
+  padding: 11px 10px 11px 4px;
+  background-color: #fff;
+  border-radius: 14px;
+  width: 143px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  transition: 0.4s;
+}
+footer .start-of-footer .read-more-link:hover {
+  transform: scale(1.2);
+}
+footer .start-of-footer .read-more-link .black-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 14px;
+  background-color: #000;
+}
+footer .start-of-footer .read-more-link a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+  margin-left: 6px;
+}
+footer .start-of-footer h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 105%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+footer .start-of-footer h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  text-align: center;
+  color: #c0c0c0;
+  margin-bottom: 22px;
+}
+footer .more-info {
+  display: flex;
+  margin-bottom: 36px;
+  justify-content: space-around;
+}
+footer .more-info .left-side {
+  margin-left: -78px;
+}
+footer .more-info .left-side img {
+  margin-bottom: 20px;
+}
+footer .more-info .left-side p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 154%;
+  color: #c0c0c0;
+}
+footer .more-info .right-side {
+  display: flex;
+}
+footer .more-info .right-side .business-areas {
+  text-align: left;
+}
+footer .more-info .right-side .business-areas ul {
+  list-style-type: none;
+  gap: 10px;
+  display: grid;
+}
+footer .more-info .right-side .business-areas ul li {
+  transition: 0.3s;
+}
+footer .more-info .right-side .business-areas ul li:hover {
+  transform: scale(1.2);
+}
+footer .more-info .right-side .business-areas ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fff;
+  text-decoration: none;
+}
+footer .more-info .right-side .business-areas P {
+  margin-left: 29px;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c0c0c0;
+}
+footer .newsletter-block {
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px white;
+  border-left: none;
+  border-right: none;
+  max-width: 1400px;
+  margin: auto;
+  padding: 36px 0;
+  margin-bottom: 56px;
+}
+footer .newsletter-block .newslatter_form {
+  display: flex;
+  position: relative;
+}
+footer .newsletter-block .newslatter_form input {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  width: 458px;
+  background: #f9fafb;
+  text-align: left;
+}
+footer .newsletter-block .newslatter_form button {
+  position: absolute;
+  border-radius: 11px;
+  width: 63px;
+  height: 30px;
+  background: #000;
+  border: none;
+  top: 11px;
+  right: 6px;
+}
+footer .newsletter-block .Subscribe h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fff;
+}
+footer .newsletter-block .Subscribe h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 154%;
+  color: #c0c0c0;
+}
+footer .end-of-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+}
+footer .end-of-footer p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #c0c0c0;
+}
+footer .end-of-footer ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+footer .end-of-footer ul .twitter:hover {
+  transform: scale(1.2);
+}
+footer .end-of-footer ul .twitter:before {
+  background-image: url(../images/twitter-logo.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+footer .end-of-footer ul .instagram:before {
+  background-image: url(../images/instagram-logo.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+footer .end-of-footer ul .facebook:before {
+  background-image: url(../images/facebook-logo.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

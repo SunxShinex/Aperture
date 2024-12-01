@@ -10,39 +10,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
     rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
 
     <link rel ="stylesheet" href ="css/style.css">
-
-</head>
+  </head>
 <body>
     <header>
-        <div class="container">
-            <a href="#">
-                <img src="images/Logo-aperture.png" alt="logo" width="128px" height="31px" class="logo-img">
-            </a>
-        <nav>
-            <ul class="navigation">
-                <li>
-                    <a href="#" class="nav-lower-text">Business areas</a>
-                </li>
-                <li>
-                    <a href="#">Featured images</a>
-                </li>
-                <li>
-                    <a href="#">Gear cage</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#" class="border-nav">Get template</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-md-6 offset-xl-11">
+              <a class="navbar-brand" href="#">
+                <img src="images/Logo-aperture.png" alt="logo" width="128px" height="31px">
+              </a>
+          </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
+            <div class="row ">
+              <div class="mb-2  offset-xl-11 offset-lg-9">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                  <li>
+                    <a class="business-text" href="#">Business areas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Featured images</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Gear cage</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#" class="link-button-nav">Get template</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </nav>
     </header>
     <main>
-        <section>
+        <section class="background">
             <div class="container">
                 <article class="main-items">
                     <p class="before-main">Photographer & Filmmaker</p>
@@ -55,20 +71,297 @@
                 </article>
                 <ul class="geo-in-end">
                     <li>
-                        <p>1/2000s</p>
+                        <p class="compas">1/2000s</p>
                     </li>
                     <li>
-                        <p>f/11</p>
+                        <p class="small-logo">f/11</p>
                     </li>
                     <li>
-                        <p>100</p>
+                        <p class="ISO">100</p>
                     </li>
                     <li>
-                        <p>Iceland</p>
+                        <p class="geo-point">Iceland</p>
                     </li>
                 </ul>
             </div>
         </section>
+        <section class="background-black">
+                <h2 class="big-text">What we do.</h2>
+                <h4>The areas that we're specialized in.</h4>
+            <div class="container text-center">
+              <div class="row g-3">
+                <div class="col-lg-5, background-1">
+                  <h5>Product Photography</h5>
+                  <p>Cras commodo consequat orci, in convallis risus egestas non. 
+                    Nulla<br> efficitur auctor hendrerit. Etiam ut orci varius, 
+                    faucibus libero ac, cursus<br> quam.</p>
+                    <div class="read-more-link">
+                      <div class="black-circle"></div>
+                      <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-5, background-2">
+                  <h5>Architecture Photography</h5>
+                  <p>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec 
+                    egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. 
+                    Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                    <div class="read-more-link">
+                      <div class="black-circle"></div>
+                      <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-5, background-3">
+                  <h5>Drone Photography</h5>
+                  <p>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+                     Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in 
+                     convallis risus egestas non. 
+                    Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus 
+                    ibero ac, cursus quam.</p>
+                    <div class="read-more-link">
+                      <div class="black-circle"></div>
+                      <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-5, background-4">
+                  <h5>Wildlife Photography</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque 
+                    aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, 
+                    condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+                    <div class="read-more-link">
+                      <div class="black-circle"></div>
+                      <a href="#">Read more</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section>
+              <div class="owl-carousel">
+                <article class="content-block-1">
+                  <div class="pam-class">
+                    <h5>Sunset at Mount Fuji</h5>
+                    <p class="text-content">Duis tristique sed lorem a vestibulum. 
+                      Cras commodo consequat orci, in convallis risus egestas non.</p>
+                      <ul class="geo-in-end">
+                        <li>
+                            <p class="compas">1''</p>
+                        </li>
+                        <li>
+                            <p class="small-logo">f/16</p>
+                        </li>
+                        <li>
+                            <p class="ISO">400</p>
+                        </li>
+                        <li>
+                            <p class="geo-point">Japan</p>
+                        </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="content-block-2">
+                  <div class="pam-class">
+                    <div class="text-block-2">
+                    <h5>The Gear cage</h5>
+                    <h4 class="text-title">The tools that we use.</h4>
+                    <p class="text-content">The say that "no place is boring if you've had a 
+                      good night's sleep and have a pocket full of unexposed film". While we don't 
+                      shoot (a lot) of film these days — 
+                      these are the tools that we actually use everyday to capture the amazing 
+                      things around us.</p>
+                      <div class="read-more-link">
+                        <div class="black-circle"></div>
+                        <a href="#">Read more</a>
+                      </div>
+                      </div>
+                    </div>
+                      <div class="back-img-class">
+                        <ul class="geo-in-end">
+                          <li>
+                              <p class="compas">1''</p>
+                          </li>
+                          <li>
+                              <p class="small-logo">f/16</p>
+                          </li>
+                          <li>
+                              <p class="ISO">400</p>
+                          </li>
+                          <li>
+                              <p class="geo-point">Japan</p>
+                          </li>
+                      </ul>
+                      </div>
+                </article>
+                <article class="content-block-3">
+                  <div class="pam-class">
+                    <h5>Monstera Leafs</h5>
+                    <p class="text-content">Vestibulum sit amet urna turpis. 
+                      Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+                      <ul class="geo-in-end">
+                        <li>
+                            <p class="compas">1/400s</p>
+                        </li>
+                        <li>
+                            <p class="small-logo">f/3,5</p>
+                        </li>
+                        <li>
+                            <p class="ISO">100</p>
+                        </li>
+                        <li>
+                            <p class="geo-point">Costa Rica</p>
+                        </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="content-block-4">
+                  <div class="pam-class">
+                    <h5>Monstera Leafs</h5>
+                    <p class="text-content">Vestibulum sit amet urna turpis. 
+                      Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+                      <ul class="geo-in-end">
+                        <li>
+                            <p class="compas">6''</p>
+                        </li>
+                        <li>
+                            <p class="small-logo">f/11</p>
+                        </li>
+                        <li>
+                            <p class="ISO">800</p>
+                        </li>
+                        <li>
+                            <p class="geo-point">Nepal</p>
+                        </li>
+                    </ul>
+                  </div>
+                </article>
+                <article class="content-block-5">
+                  <h3>
+                    Past clients
+                  </h3>
+                  <p>
+                    Trusted by your favourite companies
+                  </p>
+                  <ul class="sponsors-list">
+                    <li>
+                      <a href="#" target="_blank"><img src="images/sponsor-1.png" alt="sponsor-1" width="128px" height="30px"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><img src="images/sponsor-2.png" alt="sponsor-2" width="128px" height="78px"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><img src="images/sponsor-3.png" alt="sponsor-3" width="128px" height="20px"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><img src="images/sponsor-4.png" alt="sponsor-4" width="128px" height="36px"></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"><img src="images/sponsor-5.png" alt="sponsor-5" width="128px" height="32px"></a>
+                    </li>
+                  </ul>
+                </article>
+              </div>
+        </section>
     </main>
-</body>
+    <footer>
+      <article class="start-of-footer">
+        <h2>Need help with photography<br> or videography?</h2>
+        <h5>We're here for you!</h5>
+        <div class="read-more-link">
+          <div class="black-circle"></div>
+          <a href="#">Get in touch</a>
+        </div>
+      </article>
+      <article class="more-info">
+        <div class="left-side">
+          <img src="images/Logo-aperture.png" alt="logo" width="128px" height="31px">
+          <p>
+            Photographers & videographers capturing the world around us.
+          </p>
+        </div>
+        <div class="right-side">
+          <div class="business-areas">
+            <p>
+              Business areas
+            </p>
+            <ul>
+              <li>
+                <a href="#">Product Photography</a>
+              </li>
+              <li>
+                <a href="#">Architecture Photography</a>
+              </li>
+              <li>
+                <a href="#">Drone Photography</a>
+              </li>
+              <li>
+                <a href="#">Wildlife Photography</a>
+              </li>
+            </ul>
+          </div>
+          <div class="business-areas">
+            <p>
+              Pages
+            </p>
+            <ul>
+              <li>
+                <a href="#">Gear cage</a>
+              </li>
+              <li>
+                <a href="#">Featured images</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Style guide</a>
+              </li>
+              <li>
+                <a href="#">Instructions</a>
+              </li>
+              <li>
+                <a href="#">Changelog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="newsletter-block">
+          <div class="Subscribe">
+            <h5>
+              Subscribe to our newsletter
+            </h5>
+            <h6>
+              Read about all the things we do.
+            </h6>
+          </div>
+          <form action="" method="post" name="newslatter" class="newslatter_form">
+            <input type="email" name="email" placeholder="Email...">
+            <button type="submit" class="button-submit"></button>
+          </form>
+        </div>
+      </article>
+      <article class="end-of-footer">
+        <p>
+          © Aperture Photography, Inc. All rights reserved. Licensing
+        </p>
+        <ul>
+          <li>
+            <a href="#" target="_blank" class="twitter"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="instagram"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="facebook"></a>
+          </li>
+        </ul>
+      </article>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+    crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
