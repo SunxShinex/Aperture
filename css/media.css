@@ -1,0 +1,62 @@
+@import "style.css";
+@media only screen and (max-width: 440px){
+    main .background .container .geo-in-end{
+        justify-content: center;
+    }
+    main section .text-center{
+        padding-left: 0;
+    }
+    main section .background-2{
+        margin-left: 0;
+    }
+    main section .background-4{
+        margin-left: 0;
+    }
+    .owl-carousel .content-block-5 .sponsors-list{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .owl-carousel .content-block-2 .pam-class {
+        padding-top: 0;  
+    }
+    footer .more-info .left-side{
+        margin-left: 0;
+    }
+    .owl-carousel .content-block-3 .pam-class{
+        text-align: center;
+    }
+    .owl-carousel .content-block-4 .pam-class{
+        text-align: center;
+    }
+    .owl-carousel .content-block-1 .pam-class{
+        text-align: center;
+    }
+    .owl-carousel .content-block-2 .pam-class{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 440px){
+    main .background .container h2{
+        line-height: 1;
+    }
+}
+@media only screen and (max-width: 820px){
+    main .background .container .geo-in-end{
+        justify-content: center;
+    }
+    .owl-carousel .content-block-2 .pam-class{
+        padding-top: 73px;
+    }
+    footer .more-info .left-side{
+        margin-left: 0;
+    }
+    .owl-carousel .content-block-5 .sponsors-list{
+        gap: 30px;
+        justify-content: center;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: right;
+    }
+}
